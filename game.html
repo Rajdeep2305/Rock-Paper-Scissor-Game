@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <title>Game</title>
+</head>
+<body>
+    <div class="display">
+        <div class="body">
+            <h1>Rock Paper Scissor</h1>
+            <p class="score-board">Score Board</p>
+            <div class="score">
+                <div class="robotScore">
+                    <p>Robot:</p>
+                    <span id="robotScore">00</span>
+                </div>
+                <div class="yourScore">
+                    <p>You:</p>
+                    <span id="yourScore">00</span>
+                </div>
+            </div>
+            <div id="hands">
+                <div id="robotHand">
+                    <div class="robotHandBody">
+                        <div class="spring"></div>
+                        <div class="spring"></div>
+                        <div class="spring"></div>
+                        <div class="spring"></div>
+                        <div class="spring"></div>
+                        <div class="spring"></div>
+                        <div class="spring"></div>
+                        <div class="spring"></div>
+                        <div class="spring"></div>
+                        <div class="spring"></div>
+                        <div class="spring"></div>
+                        <div class="spring"></div>
+                        <div class="spring"></div>
+                        <div class="spring"></div>
+                        <div class="spring"></div>
+                        <div class="spring"></div>
+                        <div class="spring"></div>
+                        <div class="spring"></div>
+                        <div class="spring"></div>
+                        <div class="spring"></div>
+                    </div>
+                    <div class="robotHandPum">
+                        <div class="nut1">
+                            <div class="nut11"></div>
+                            <br>
+                            <div class="nut12"></div>
+                        </div>
+                        <div class="nut2"></div>
+                        <div class="nut3">
+                            <div class="nut31"></div>
+                            <br>
+                            <div class="nut32"></div>
+                        </div>
+                    </div>
+                    <div id="robotHandFinger">
+                        <div id="robotFingerOne"></div>
+                        <div id="robotFingerTwo"></div>
+                        <div id="robotFingerThree"></div>
+                        <div id="robotFingerFour"></div>
+                    </div>
+                </div>
+
+                <div id="br"></div>
+
+                <div id="rock0">Rock</div>
+                <div id="paper0">Paper</div>
+                <div id="scissor0">Scissor</div>
+
+                <div id="br"></div>
+
+                <div id="yourHand">
+                    <div id="yourHandFinger">
+                        <div id="yourFingerOne"></div>
+                        <div id="yourFingerTwo"></div>
+                        <div id="yourFingerThree"></div>
+                        <div id="yourFingerFour"></div>
+                    </div>
+                    <div class="yourHandPum"></div>
+                    <div class="yourHandBody"></div>
+                </div>
+            </div>
+
+            <div id="youWon">You won the Match.</div>
+            <div id="robotWon">Robot won the Match.</div>
+            <div id="draw">The match is Draw</div>
+            
+            <div id="robotChoose1">Robot choose Rock.</div>
+            <div id="robotChoose2">Robot choose Paper.</div>
+            <div id="robotChoose3">Robot choose Scissor.</div>
+
+            <div id="choose1">You choose Rock.</div>
+            <div id="choose2">You choose Paper.</div>
+            <div id="choose3">You choose Scissor.</div>
+            <div class="button0" id="button0">
+                <h2 class="opinion">Choose:</h2>
+                <button type="submit" id="rock" onclick="rock()">
+                    <img src="image/download.jpg" alt="rock">
+                </button>
+                <button type="submit" id="paper" onclick="paper()">
+                    <img src="image/images.png" alt="paper">
+                </button>
+                <button type="submit" id="scissor" onclick="scissor()">
+                    <img src="image/scissors.jpg" alt="scissor">
+                </button>
+            </div>
+            <div class="button1">
+                <button type="submit" title="Play Again" class="Play" id="play" onclick="play()">
+                    <div class="playButton"></div>
+                    Play
+                </button>
+                <button type="submit" title="HOME" class="HOME" onclick="home()">
+                    <div class="home">
+                        <div class="homeTop"></div>
+                        <div class="homeBody">
+                            <div class="homeGate"></div>
+                        </div>
+                    </div>
+                    Home
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

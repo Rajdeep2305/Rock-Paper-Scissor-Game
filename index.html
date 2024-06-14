@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock-Paper-Scissor</title>
+</head>
+<body>
+    <div class="body">
+        <div class="contain">
+    <!-- next level -->
+            <div class="box" id="box1" style="display: block;">
+                <p style="text-align: center;">Welcome <br>to<br><h1>Rock Paper Scissor</h1></p>
+                <div class="submit" onclick="LevelCross()">
+                    <button type="start" id="start">
+                        <div class="triangle"></div>
+                    </button>
+                </div>
+            </div>
+    <!-- next level -->
+            <div class="box1" id="box2" style="display: none;">
+                <p>Hi,<br> My name is 'Santi'. I am a robo gamer.<br>Do you know the process of the game?</p>
+                <div class="ans">
+                    <div id="know">
+                        <input type="radio" name="Understand" value="Yes" id="I_Know"> <label for="I_Know">Yes</label>
+                    </div>
+                    <div id="know1" style="display: none;">
+                        <div class="button"></div>
+                        <p>Yes</p>
+                    </div>
+                    <div class="no">
+                        <input type="radio" name="Understand" value="No" id="I_Do_Not_Know"><label for="I_Do_Not_Know">No</label>
+                    </div>
+                    <span id="timmer" style="color: black; font-weight: 900;">01:00</span>
+                </div>
+                <div id="steps" style="display: none;">
+                    <p>Let me explain it to you. It will make it much easier to play the game with me.</p>
+                    <h2>Steps:</h2>
+                    <ol>
+                        <li><strong>Understand the Rules:</strong>
+                            <ul>
+                                <li>Rock crushes Scissors</li>
+                                <li>Scissors cut Paper</li>
+                                <li>Paper covers Rock</li>
+                            </ul>
+                        </li>
+                        <li><strong>Setup:</strong> Make fists and count to three together.</li>
+                        <li><strong>Throw Signs:</strong> On three, show Rock (fist), Paper (open hand), or Scissors (V).</li>
+                        <li><strong>Determine Winner:</strong> Compare signs. Same sign means a tie.</li>
+                        <li><strong>Winning:</strong> Decide on best of three, five, or first to a set wins.</li>
+                    </ol>
+                    <button type="submit" id="Understand" onclick="Understand()">I Understand</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
